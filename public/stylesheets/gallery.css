@@ -1,0 +1,61 @@
+@import url("./home.css");
+
+.bro {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+    justify-content: center;
+}
+
+.bro1 figure {
+    flex: 1 1 calc( - ); /* 4 items per row for large screens */
+    max-width: calc(25% - 20px);
+    height: 270px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: orange;
+    border: 2px solid gray;
+    transition: transform 0.3s ease, bro-shadow 0.3s ease;
+}
+
+.bro1 figure img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.bro1 figcaption {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 18px;
+    color: #333;
+}
+
+.bro1 figure:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Medium devices (Tablets) */
+@media (max-width: 1024px) {
+    .bro1 figure {
+        flex: 1 1 calc( - 20px); /* 3 items per row */
+        max-width: calc(33.333% - 20px);
+    }
+}
+
+/* Small devices (Phones) */
+@media (max-width: 768px) {
+    .bro1 figure {
+        flex: 1 1 calc( - 20px); /* 2 items per row */
+        max-width: calc(60% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .bro1 figure{
+        max-width: 100%;
+    }
+}

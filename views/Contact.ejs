@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/stylesheets/contact.css">
+    <%- include('./partials/head'); %>
+</head>
+<body>
+    
+    <%- include('./partials/navbar'); %>
+    <%- include('./partials/mode'); %>
+
+    <div class="container">
+        <div class="bomb bomb1">
+            <div class="form">
+                <div class="label">Contact</div>
+                <hr>
+                <div class="layout">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <a href=""><input class="button" type="button" value="Submit"></a>
+                    <a class="ml-100" href=""><input class="button" type="button" value="Reset"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('./partials/footer'); %>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+@import url("./home.css");
+
+h2{
+    width: 35rem;
+    height: 3rem;
+    padding: 5px;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 30rem;
+    margin-top: 3rem;
+    background-color: green;
+}
+figure img{
+    width: 25rem;
+    margin-left: 35rem;
+    margin-top: 3rem;
+    border-radius: 20px;
+}
+figure img:hover{
+    transform: scale(1.1);
+    border-radius: 20px;
+    box-shadow: 1px 0px 0px 5px  blueviolet;
+}
+p{
+    margin-top: -2rem;
+    margin-bottom: -5rem;
+    color: #504b4b;
+    text-align: center;
+    padding: 6rem;
+}

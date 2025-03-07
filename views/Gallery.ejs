@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head'); %>
+        <%- include('./partials/mode'); %>
+</head>
+
+<body>
+
+    <%- include('./partials/navbar'); %>
+
+
+        <div class="container">
+            <div class="bro bro1" id="gallery"></div>
+        </div>
+
+        <script>
+            const gallery = document.getElementById('gallery');
+
+            // Sample data for the products
+            const products = [
+                { name: "Vivo Y56 5G", image: "/images/ID365185170202309290753-remove_cp@2x.png", bgColor: "orange"},
+                { name: "Apple iPhone", image: "/images/ID261934_qgssvy-removebg-previ.png", bgColor: "pink" },
+                { name: "Oppo Reno 5G", image: "/images/oppo-affordable-smartphone-680.png", bgColor: "rgb(157, 149, 93)" },
+                { name: "Realme Narzo 50A", image: "/images/Realme-Narzo-50A-Prime-600x600@2x.png", bgColor: "magenta" },
+                { name: "Redmi Note 12 Pro", image: "/images/redmi_cr.png", bgColor: "yellow" },
+                { name: "Samsung M23 5G", image: "/images/samsung_galaxy_m23_azul_001_l-_c.png", bgColor: "green" },
+                { name: "One Plus 5G", image: "/images/ID1_ct@2x.png", bgColor: "blue" },
+                { name: "Poco M4 Pro 5G", image: "/images/poco-m4-pro-5g-thumb.png", bgColor: "red" },
+                { name: "Lenovo", image: "/images/LENOVO-V16-INTEL-CELERON-1TB-4.png", bgColor: "rgb(121, 131, 194)" },
+                { name: "Dell", image: "/images/images__1_-removebg-preview.png", bgColor: "rgb(126, 187, 132)" },
+                { name: "HP Pavilion", image: "/images/nbr-156-fhd-pc-i7-8550u-8g-256.png", bgColor: "rgb(239, 243, 184)" },
+                { name: "Oppo Reno 5G", image: "/images/oppo-affordable-smartphone-680.png", bgColor: "rgb(157, 149, 93)" },
+                { name: "Realme Narzo 50A", image: "/images/Realme-Narzo-50A-Prime-600x600@2x.png", bgColor: "magenta" },
+                { name: "Redmi Note 12 Pro", image: "/images/redmi_cr.png", bgColor: "yellow" },
+                { name: "Samsung M23 5G", image: "/images/samsung_galaxy_m23_azul_001_l-_c.png", bgColor: "green" },
+                { name: "One Plus 5G", image: "/images/ID1_ct@2x.png", bgColor: "blue" },
+                { name: "Poco M4 Pro 5G", image: "/images/poco-m4-pro-5g-thumb.png", bgColor: "red" },
+                { name: "Lenovo", image: "/images/LENOVO-V16-INTEL-CELERON-1TB-4.png", bgColor: "rgb(164, 103, 103)" },
+                { name: "Vivo Y56 5G", image: "/images/ID365185170202309290753-remove_cp@2x.png", bgColor: "orange", link: "/About" },
+                { name: "Apple iPhone", image: "/images/ID261934_qgssvy-removebg-previ.png", bgColor: "pink" },
+                { name: "Samsung M23 5G", image: "/images/samsung_galaxy_m23_azul_001_l-_c.png", bgColor: "green" },
+                { name: "One Plus 5G", image: "/images/ID1_ct@2x.png", bgColor: "blue" },
+                { name: "Realme Narzo 50A", image: "/images/Realme-Narzo-50A-Prime-600x600@2x.png", bgColor: "magenta" },
+                { name: "Oppo Reno 5G", image: "/images/oppo-affordable-smartphone-680.png", bgColor: "rgb(157, 149, 93)" },
+            ];
+
+            // Function to generate figure elements dynamically
+            products.forEach(product => {
+                const figure = document.createElement('figure');
+                figure.style.backgroundColor = product.bgColor;  // Apply the specific background color
+
+                figure.innerHTML = `
+            <a href="${product.link}" style="text-decoration: none;">
+                <img src="${product.image}" alt="${product.name}" style="max-width: 100%; border-radius: 4px;">
+                <figcaption style="font-size: 16px; font-weight: bold; color: black;">
+                    ${product.name}
+                </figcaption>
+            </a>
+        `;
+
+                gallery.appendChild(figure);
+            });
+        </script>
+
+        <%- include('./partials/footer'); %>
+
+</body>
+
+</html>
