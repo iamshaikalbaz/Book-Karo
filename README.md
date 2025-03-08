@@ -4,11 +4,6 @@
 
 ---
 
-## 🚀 Live Demo  
-🔗 [Click Here](https://iamshaikalbaz.github.io/Book-Karo/)  
-
----
-
 ## 📌 Features  
 ✅ **User-Friendly Interface:** A clean and simple UI for easy navigation.  
 ✅ **Responsive Design:** Fully optimized for all devices using **Tailwind CSS**.  
