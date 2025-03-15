@@ -49,43 +49,43 @@ Manage Bookings from your dashboard.
 
 📁 Book-Karo
 │
-├── 📂 node_modules/        # Dependencies
+├── 📂 node_modules/        
 │
-├── 📂 public/              # Public assets
+├── 📂 public/               
 |   |
-│   ├── 📂 images/         # Image files
+│   ├── 📂 images/        
 |   |
-│   ├── 📂 stylesheets/    # CSS styles
+│   ├── 📂 stylesheets/     
 |   |
-│   ├── 📂 javascripts/    # Client-side scripts
+│   ├── 📂 javascripts/     
 │
-├── 📂 views/              # EJS templates
+├── 📂 views/               
 |   |
-│   ├── 📄 About.ejs       # About page
+│   ├── 📄 About.ejs       
 |   |
-│   ├── 📄 Home.ejs        # Home page
+│   ├── 📄 Home.ejs         
 |   |
-│   ├── 📄 contact.ejs     # Contact page
+│   ├── 📄 contact.ejs      
 |   |
-│   ├── 📄 gallery.ejs     # Gallery page
+│   ├── 📄 gallery.ejs   
 |   |
-│   ├── 📄 news.ejs        # News page
+│   ├── 📄 news.ejs        
 |   |
-│   ├── 📂 partials/       # Reusable components
+│   ├── 📂 partials/       
 |   |   |
-│   │   ├── 📄 head.ejs    # Head section
+│   │   ├── 📄 head.ejs     
 |   |   |
-│   │   ├── 📄 footer.ejs  # Footer
+│   │   ├── 📄 footer.ejs   
 |   |   |
-│   │   ├── 📄 navbar.ejs  # Navigation bar
+│   │   ├── 📄 navbar.ejs   
 |   |   |
-│   │   ├── 📄 mode.ejs    # Theme mode switcher
+│   │   ├── 📄 mode.ejs    
 │
-├── 📄 app.js              # Main server file
+├── 📄 app.js              
 │
-├── 📄 package.json        # Project metadata
+├── 📄 package.json       
 │
-├── 📄 package-lock.json   # Dependency lock file
+├── 📄 package-lock.json   
 
 
 ## 🚀 Installation & Usage
