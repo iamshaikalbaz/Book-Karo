@@ -48,13 +48,15 @@ Manage Bookings from your dashboard.
 ## 📂 Project Structure
 
 📁 Book-Karo
-
-│── 📂 node_modules/        # Dependencies
-│── 📂 public/              # Public assets
+│
+├── 📂 node_modules/        # Dependencies
+│
+├── 📂 public/              # Public assets
 │   ├── 📂 images/         # Image files
 │   ├── 📂 stylesheets/    # CSS styles
 │   ├── 📂 javascripts/    # Client-side scripts
-│── 📂 views/              # EJS templates
+│
+├── 📂 views/              # EJS templates
 │   ├── 📄 About.ejs       # About page
 │   ├── 📄 Home.ejs        # Home page
 │   ├── 📄 contact.ejs     # Contact page
@@ -65,9 +67,10 @@ Manage Bookings from your dashboard.
 │   │   ├── 📄 footer.ejs  # Footer
 │   │   ├── 📄 navbar.ejs  # Navigation bar
 │   │   ├── 📄 mode.ejs    # Theme mode switcher
-│── 📄 app.js              # Main server file
-│── 📄 package.json        # Project metadata
-│── 📄 package-lock.json   # Dependency lock file
+│
+├── 📄 app.js              # Main server file
+├── 📄 package.json        # Project metadata
+├── 📄 package-lock.json   # Dependency lock file
 
 ## 🚀 Installation & Usage
 
